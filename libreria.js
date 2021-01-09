@@ -132,11 +132,10 @@ console.log(
 //Nota: findIndex () no ejecuta la función para elementos de matriz sin valores.
 //Nota: findIndex () no cambia la matriz original.
 
-const numberFindIndex = [23, 5, 180, 20, 6, 3, 54, 105];
+const numberFindIndex = [];
 let response = -1;
 
 function customFindIndex(array, fn) {
-  let response = undefined;
   const newData = [];
   for (let i = 0; i < array.length; i++) {
     if (fn(array[i])) {
